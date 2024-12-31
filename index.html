@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the love of my life</title>
+    <style>
+        body {
+            background-color: #001f3f; /* Very dark blue background */
+            color: #0074D9; /* Bright blue text for contrast */
+            font-family: 'Brush Script MT', cursive;
+            text-align: center;
+            padding: 50px;
+            position: relative;
+            min-height: 100vh;
+        }
+        h1 {
+            font-size: 3.5em;
+            color: #00509E; /* Darker blue */
+            text-shadow: 3px 3px 10px #003366; /* Deep blue glow */
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .message {
+            font-size: 1.5em;
+            color: #0074D9;
+            margin: 20px auto;
+            max-width: 600px;
+            line-height: 1.6;
+            font-style: italic;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+        .phrase-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+            animation: fadeIn 3s ease-in-out;
+        }
+        .phrase {
+            font-size: 1.5em;
+            color: #0074D9; /* Bright blue */
+            background: #00264d; /* Deep blue box */
+            padding: 10px 20px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            opacity: 0;
+            transform: scale(0.8);
+            animation: appear 1.5s ease-in-out forwards;
+        }
+        .phrase:nth-child(odd) {
+            background: #003366; /* Dark blue */
+            color: #99d6ff;
+        }
+        .phrase:nth-child(even) {
+            background: #005f99; /* Medium blue */
+            color: #cceeff;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes appear {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .phrase:nth-child(odd) { animation-delay: 0.5s; }
+        .phrase:nth-child(even) { animation-delay: 1s; }
+
+        .signature {
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+            font-size: 1.2em;
+            color: #66c2ff; /* Soft blue */
+            font-style: italic;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is not for celebrating the New Year</h1>
+    <div class="message">
+        This is for saying that I am going to spend this year making you happy. Your presence lights up my world, and I promise to fill your days with joy and care if we ahve chance to be toghethe again.
+    </div>
+    <div class="phrase-container">
+        <span class="phrase">"In your eyes I found my paradise." - Unknown</span>
+        <span class="phrase">"You are my sun, my moon, and all my stars." - E.E. Cummings</span>
+        <span class="phrase">"Every moment with you is a treasure." - Unknown</span>
+        <span class="phrase">"You are the poetry I never knew how to write." - Unknown</span>
+        <span class="phrase">"In your love, I have found my calling." - Rumi</span>
+        <span class="phrase">"Your presence turns ordinary days into magical moments." - Unknown</span>
+        <span class="phrase">"With you, I have found the meaning of forever." - Unknown</span>
+        <span class="phrase">"I never knew love until I saw your smile." - Unknown</span>
+        <span class="phrase">"Your laughter is the melody of my heart." - Unknown</span>
+        <span class="phrase">"You are the dream I never want to wake up from." - Unknown</span>
+        <span class="phrase">"ana kanbghik." - Unknown</span>
+        <span class="phrase">"My love for you grows stronger with each passing day." - Unknown</span>
+    </div>
+
+    <div class="signature">
+        For you Ouassila and only you<br>
+        from the "Unknown"
+    </div>
+
+    <!-- Background music with autoplay and loop -->
+    <audio autoplay loop>
+        <source src="romantic-melody.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>
